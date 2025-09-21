@@ -1,3 +1,7 @@
 .venv/
 audios/
-text/
+text_outputs/
+__pycache__/
+*.pyc
+temp_chunks/
+text_output/

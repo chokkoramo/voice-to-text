@@ -1,3 +1,20 @@
-openai-whisper
-pydub
-tqdm
+# PyTorch con soporte CUDA (elige la versión según tu driver NVIDIA)
+
+# Para CUDA 11.8
+torch==2.3.1+cu118 torchvision==0.18.1+cu118 torchaudio==2.3.1+cu118 \
+    --index-url https://download.pytorch.org/whl/cu118
+
+# Para CUDA 12.1 (si tu driver es reciente y soporta CUDA 12)
+# torch==2.3.1+cu121 torchvision==0.18.1+cu121 torchaudio==2.3.1+cu121 \
+#     --index-url https://download.pytorch.org/whl/cu121
+
+# Whisper para transcripción
+openai-whisper==20231117
+
+# Librerías para manejo de audio
+pydub==0.25.1
+
+# Dependencias útiles
+tqdm==4.66.5
+numpy==1.26.4
+ffmpeg-python==0.2.0
